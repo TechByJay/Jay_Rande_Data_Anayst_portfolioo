@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-primary: #2563EB;
+  --color-secondary-blue: #3B82F6;
+  --color-accent-blue: #60A5FA;
+  --color-brand-cyan: #06B6D4;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #0F172A;
+  color: #F1F5F9;
+}
+
+body {
+  background-color: #0F172A;
+  color: #F1F5F9;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090D1A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+  border: 2px solid #090D1A;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(30, 41, 59, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark-glass {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Typography styles for sections */
+.display-hero {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  background-clip: text;
+  color: #FFFFFF;
+}
+
+/* Print Styles for a high-quality resume output */
+@media print {
+  html, body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Hide other web sections so only the resume remains */
+  #main-content-flow > *:not(#resume),
+  #app-root-viewport > *:not(#main-content-flow):not(#resume-modal-portal),
+  footer,
+  nav,
+  header {
+    display: none !important;
+  }
+
+  /* Hide interactive action bars, buttons, and headings from printing */
+  .no-print,
+  #resume-heading-block {
+    display: none !important;
+  }
+
+  /* Hide the modal control bar when printing from inside the modal */
+  #resume-modal-portal > div > div:first-child {
+    display: none !important;
+  }
+
+  /* Render the resume container perfectly on paper sheets */
+  #physical-resume-sheet {
+    display: block !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    color: #1e293b !important;
+    background: #ffffff !important;
+  }
+
+  #resume-page-1 {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  #resume-page-1, #resume-page-2 {
+    display: block !important;
+    padding: 24px 36px !important;
+    box-sizing: border-box !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}
+
