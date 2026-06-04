@@ -1,5 +1,17 @@
 import { Project, SkillCategory, Certificate, Experience, Education } from './types';
 
+import profileImg from './assets/images/regenerated_image_1780485889646.jpg';
+import appleSalesImg from './assets/images/regenerated_image_1780485900862.jpg'; // OLA is olaRidesImg, wait let's map properly:
+import bankingFraudImg from './assets/images/regenerated_image_1780485891593.png';
+import creditCardFraudImg from './assets/images/regenerated_image_1780485896467.png';
+import vendorPerfImg from './assets/images/regenerated_image_1780485899217.jpg';
+import appleRetailImg from './assets/images/regenerated_image_1780485894971.jpg';
+import olaRidesImg from './assets/images/regenerated_image_1780485900862.jpg';
+
+import fccResponsiveImg from './assets/images/fcc_responsive_web_1780512000000_1780503693686.png';
+import udemyDsaImg from './assets/images/udemy_dsa_cpp_1780512000000_1780503709084.png';
+import fccJsImg from './assets/images/fcc_js_algorithms_1780512000000_1780503723073.png';
+
 export const JAY_PROFILE = {
   name: 'Jay Rande',
   title: [
@@ -15,7 +27,7 @@ export const JAY_PROFILE = {
   location: 'Kandivali (West), Mumbai',
   github: 'https://github.com/TechByJay',
   linkedin: 'https://www.linkedin.com/in/jay-rande/',
-  profileImg: '/src/assets/images/regenerated_image_1780485889646.jpg',
+  profileImg: profileImg,
   resumePdf: '/jj_Resume.pdf',
   stats: [
     { label: 'Projects Completed', value: '5+', icon: 'TrendingUp' },
@@ -29,7 +41,7 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 'apple-retail',
     title: 'Apple Retail Sales Analytics (1M+ Records)',
-    image: '/src/assets/images/regenerated_image_1780485894971.jpg',
+    image: appleRetailImg,
     githubUrl: 'https://github.com/TechByJay/apple-retail-sales-analytics-using-postgresql-with-1m-records',
     linkedinUrl: 'https://www.linkedin.com/posts/jay-rande_sql-postgresql-dataanalytics-activity-7464348133225820160-Lckb',
     description: `• Analyzed over 1 million retail sales records using PostgreSQL to solve real-world business and sales analytics problems.
@@ -43,7 +55,7 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 'banking-fraud',
     title: 'Banking Fraud Detection and Credit Risk Analysis',
-    image: '/src/assets/images/regenerated_image_1780485891593.png',
+    image: bankingFraudImg,
     githubUrl: 'https://github.com/TechByJay/Banking-Fraud-Detection-and-Credit-Risk-Analysis-using-python--EDA--and-Power-BI',
     linkedinUrl: 'https://www.linkedin.com/posts/jay-rande_banking-fraud-detection-using-python-eda-activity-7466802731022704641-ow39',
     description: `• Performed end-to-end analysis of banking transactions and customer credit profiles to identify fraud patterns and high-risk segments.
@@ -57,7 +69,7 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 'credit-card-fraud',
     title: 'Credit Card Fraud Detection & Risk Analytics Platform',
-    image: '/src/assets/images/regenerated_image_1780485896467.png',
+    image: creditCardFraudImg,
     githubUrl: 'https://github.com/TechByJay/Credit_Card_Fraud_Detection_And_Risk_Analytics_Platform',
     linkedinUrl: 'https://www.linkedin.com/posts/jay-rande_powerbi-dataanalytics-businessintelligence-activity-7462843136369709057-obpW',
     description: `• Built a business intelligence platform for monitoring fraudulent transactions, customer risk profiles, and transaction anomalies.
@@ -71,7 +83,7 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 'vendor-performance',
     title: 'Vendor Performance & Inventory Analytics System',
-    image: '/src/assets/images/regenerated_image_1780485899217.jpg',
+    image: vendorPerfImg,
     githubUrl: 'https://github.com/TechByJay/Vendor_Performance_and_Inventory_Analytics_System',
     linkedinUrl: 'https://www.linkedin.com/posts/jay-rande_dataanalytics-powerbi-sql-activity-7462343832634851328-d8Gn',
     description: `• Designed a business intelligence solution to evaluate vendor performance, procurement efficiency, and inventory utilization.
@@ -85,7 +97,7 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 'ola-rides',
     title: 'OLA Ride Analytics & Business Intelligence Dashboard',
-    image: '/src/assets/images/regenerated_image_1780485900862.jpg',
+    image: olaRidesImg,
     githubUrl: 'https://github.com/TechByJay/OLA_Ride_Analytics_and_Business_Intelligence_Dashboard',
     linkedinUrl: 'https://www.linkedin.com/posts/jay-rande_powerbi-dataanalytics-businessintelligence-activity-7461264188359733248-_qMD',
     description: 'Designed a business intelligence dashboard analyzing ride trends, cancellation distributions, revenue lines, and customer feedback for ride-hailing services.',
@@ -157,7 +169,7 @@ export const CERTIFICATES_DATA: Certificate[] = [
   {
     title: 'Responsive Web Design',
     issuer: 'FreeCodeCamp',
-    image: '/src/assets/images/fcc_responsive_web_1780512000000_1780503693686.png',
+    image: fccResponsiveImg,
     verificationUrl: 'https://www.freecodecamp.org/certification/fccaaed2169-bb8c-4820-9f50-dc501137a0cc/responsive-web-design',
     linkedinUrl: 'https://www.linkedin.com/posts/jay-rande_certified-frontend-html-activity-7317929321241706496-dEjk',
     date: 'April 2025'
@@ -165,14 +177,14 @@ export const CERTIFICATES_DATA: Certificate[] = [
   {
     title: 'Mastering Data Structures & Algorithms Using C and C++',
     issuer: 'Udemy',
-    image: '/src/assets/images/udemy_dsa_cpp_1780512000000_1780503709084.png',
+    image: udemyDsaImg,
     linkedinUrl: 'https://www.linkedin.com/posts/jay-rande_datastructures-algorithms-cpp-activity-7319466745822437376-3BFN',
     date: 'April 2025'
   },
   {
     title: 'JavaScript Algorithms and Data Structures',
     issuer: 'FreeCodeCamp',
-    image: '/src/assets/images/fcc_js_algorithms_1780512000000_1780503723073.png',
+    image: fccJsImg,
     verificationUrl: 'https://www.freecodecamp.org/certification/fccaaed2169-bb8c-4820-9f50-dc501137a0cc/javascript-algorithms-and-data-structures-v8',
     linkedinUrl: 'https://www.linkedin.com/posts/jay-rande_javascript-algorithms-datastructures-activity-7324117220119199745-YtKw',
     date: 'May 2025'

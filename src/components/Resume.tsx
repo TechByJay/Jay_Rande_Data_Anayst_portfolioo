@@ -530,237 +530,229 @@ export default function Resume({ onClose, isModal = false }: ResumeProps) {
     <div id="physical-resume-sheet" className="bg-white text-slate-900 rounded-2xl border border-slate-200 shadow-xl max-w-4xl mx-auto font-sans text-left print:border-none print:shadow-none print:p-0 overflow-hidden">
       
       {/* Page 1 */}
-      <div id="resume-page-1" className="p-5 sm:p-8">
+      <div id="resume-page-1" className="p-8 sm:p-10 select-all">
         {/* Resume Header */}
-        <div className="text-center pb-3 border-b-2 border-slate-900">
-          <h1 className="text-2xl font-display font-extrabold text-slate-900 tracking-tight uppercase">
-            {JAY_PROFILE.name}
+        <div className="text-center pb-3">
+          <h1 className="text-3xl sm:text-4xl font-display font-medium text-slate-950 tracking-tight mb-2">
+            Jay Rande
           </h1>
-          <p className="text-xs font-semibold tracking-wide text-blue-600 uppercase mt-0.5">
-            Data Analyst · Business Intelligence Enthusiast · SQL Developer
-          </p>
           {/* Contact Strip */}
-          <div className="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 mt-2 text-[11px] sm:text-xs text-slate-600 font-mono select-none">
-            <div className="flex items-center gap-0.5">
-              <MapPin className="h-3 w-3 text-slate-500 shrink-0" />
-              <span>Kandivali (West), Mumbai</span>
-            </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[11.5px] sm:text-xs text-slate-800 font-mono tracking-wide">
+            <span>Mumbai, India</span>
             <span className="text-slate-300">|</span>
-            <a 
-              href={`mailto:${JAY_PROFILE.email}`}
-              onClick={handleCopyEmail}
-              className="flex items-center gap-0.5 hover:text-blue-600 transition outline-none cursor-pointer"
-              title="Click to copy, double click/long press to mail"
-            >
-              <Mail className="h-3 w-3 text-slate-500 shrink-0" />
-              <span>{copiedEmail ? 'Copied!' : JAY_PROFILE.email}</span>
-            </a>
+            <a href="tel:+919321778286" className="hover:text-blue-600 transition">+91 9321778286</a>
             <span className="text-slate-300">|</span>
-            <a 
-              href={`tel:${JAY_PROFILE.phone}`}
-              className="flex items-center gap-0.5 hover:text-blue-600 transition outline-none cursor-pointer"
-              title="Call mobile phone"
-            >
-              <Phone className="h-3 w-3 text-slate-500 shrink-0" />
-              <span>{JAY_PROFILE.phone}</span>
-            </a>
+            <a href="mailto:jayrandecs@gmail.com" onClick={handleCopyEmail} className="hover:text-blue-600 transition underline cursor-pointer">{copiedEmail ? 'Copied!' : 'jayrandecs@gmail.com'}</a>
             <span className="text-slate-300">|</span>
-            <a 
-              href={portfolioUrl} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="flex items-center gap-0.5 hover:text-blue-600 transition outline-none"
-              title="View my dynamic portfolio website"
-            >
-              <Globe className="h-3.5 w-3.5 text-blue-500 shrink-0" />
-              <span>Portfolio</span>
-            </a>
+            <a href="https://linkedin.com/in/jay-rande" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition underline">linkedin.com/in/jay-rande</a>
             <span className="text-slate-300">|</span>
-            <a 
-              href={JAY_PROFILE.linkedin} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="flex items-center gap-0.5 hover:text-blue-600 transition outline-none"
-            >
-              <Linkedin className="h-3 w-3 text-slate-400 shrink-0" />
-              <span>LinkedIn</span>
-            </a>
-            <span className="text-slate-300">|</span>
-            <a 
-              href={JAY_PROFILE.github} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="flex items-center gap-0.5 hover:text-blue-600 transition outline-none"
-            >
-              <Github className="h-3 w-3 text-slate-400 shrink-0" />
-              <span>GitHub</span>
-            </a>
+            <a href="https://github.com/TechByJay" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition underline">github.com/TechByJay</a>
           </div>
         </div>
 
-        {/* Professional Summary */}
-        <div className="py-2.5 border-b border-slate-200">
-          <h2 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-1">
-            Professional Profile Summary
+        {/* SUMMARY */}
+        <div className="py-2">
+          <h2 className="text-xs sm:text-[13px] font-bold text-slate-950 uppercase tracking-wider border-b border-slate-950 pb-0.5 mb-2">
+            SUMMARY
           </h2>
-          <p className="text-xs text-slate-700 leading-normal font-light">
-            Detail-oriented Data Analyst with expertise in SQL, Python, Power BI, Excel, and Statistical Analysis. Skilled in data cleaning, EDA, fraud detection, credit risk analysis, and business intelligence reporting. Developed multiple analytics projects using PostgreSQL, Pandas, NumPy, DAX, and Power BI, including large-scale datasets exceeding 1 million records. Strong analytical and problem-solving abilities with a passion for deriving actionable insights and supporting data-driven decision-making.
+          <p className="text-[11.5px] sm:text-xs text-slate-800 leading-relaxed font-normal text-justify">
+            Data Analyst with a Bachelor's degree in Computer Science and hands-on expertise in SQL, Python, and Power BI, specializing in transforming complex data sets into actionable business insights. Proficient in building interactive dashboards, automating ETL pipelines, and conducting end-to-end fraud detection and credit risk analysis across large-scale datasets exceeding 1 million records. Proven ability to identify trends and patterns in data, develop automation solutions, and deliver data-driven recommendations that support strategic decision-making for business partners.
           </p>
         </div>
 
-        {/* Skills Matrix */}
-        <div className="py-2.5 border-b border-slate-200">
-          <h2 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-1.5">
-            Technical Expertise Matrix
+        {/* SKILLS */}
+        <div className="py-2">
+          <h2 className="text-xs sm:text-[13px] font-bold text-slate-950 uppercase tracking-wider border-b border-slate-950 pb-0.5 mb-2">
+            SKILLS
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-1.5 gap-x-6 text-xs text-slate-700 font-light">
+          <div className="space-y-1.5 text-[11px] sm:text-xs text-slate-800 leading-relaxed font-normal">
             <div>
-              <span className="block font-bold text-slate-900 mb-0.5">Query & Computing:</span>
-              <span>SQL (MySQL, PostgreSQL, PL/SQL), Python (Pandas, NumPy, Matplotlib, Seaborn)</span>
+              <strong className="font-bold text-slate-950">Programming Languages:</strong> Python, SQL, PL/SQL, T-SQL, JavaScript, C, C++
             </div>
             <div>
-              <span className="block font-bold text-slate-900 mb-0.5">Analytics Reporting:</span>
-              <span>Power BI (DAX, Power Query ETL, KPI dashboards), Microsoft Excel (PivotTables, charts)</span>
+              <strong className="font-bold text-slate-950">Data Analysis & Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn, Exploratory Data Analysis (EDA), Statistical Analysis
             </div>
             <div>
-              <span className="block font-bold text-slate-900 mb-0.5">Key Practices:</span>
-              <span>Exploratory Data Analysis (EDA), Fraud & Risk Modeling, ETL Routines, Web Scraping</span>
+              <strong className="font-bold text-slate-950">Business Intelligence & Reporting:</strong> Power BI, DAX, Power Query, KPI Dashboards, Data Visualization, Microsoft Excel (PivotTables)
+            </div>
+            <div>
+              <strong className="font-bold text-slate-950">Databases:</strong> PostgreSQL, MySQL, PL/SQL, T-SQL
+            </div>
+            <div>
+              <strong className="font-bold text-slate-950">Data Engineering & Tools:</strong> ETL Pipelines, Data Cleaning, Data Transformation, Data Validation, Automation Solutions, Web Scraping
+            </div>
+            <div>
+              <strong className="font-bold text-slate-950">Domain Expertise:</strong> Fraud Detection, Credit Risk Analysis, Risk Modeling, Dashboard Development, Stakeholder Reporting
             </div>
           </div>
         </div>
 
-        {/* Featured Projects */}
-        <div id="resume-projects" className="py-2.5">
-          <h2 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-2">
-            Key Projects & Technical Case Studies
+        {/* PROJECTS */}
+        <div className="py-2">
+          <h2 className="text-xs sm:text-[13px] font-bold text-slate-950 uppercase tracking-wider border-b border-slate-950 pb-0.5 mb-3">
+            PROJECTS
           </h2>
-          <div className="space-y-2.5">
-            {PROJECTS_DATA.slice(0, 4).map((proj) => (
-              <div key={proj.id}>
-                <div className="flex justify-between items-baseline">
-                  <h3 className="text-xs font-bold text-slate-900">
-                    {proj.title}
-                  </h3>
-                  <span className="text-[9px] uppercase font-mono font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded print:bg-none print:px-0">
-                    {proj.technologies.slice(0, 3).join(' · ')}
-                  </span>
+          
+          <div className="space-y-3.5">
+            {/* Project 1 */}
+            <div>
+              <div className="flex justify-between items-baseline flex-wrap gap-1.5 mb-1">
+                <div className="text-[11.5px] sm:text-[12.5px] text-slate-950 font-bold leading-snug">
+                  Banking Fraud Detection & Credit Risk Analysis <span className="font-normal text-slate-800">(Python, Pandas, NumPy, Power BI, DAX, EDA)</span>
                 </div>
-                <p className="text-[11px] sm:text-xs text-slate-600 mt-0.5 leading-tight font-light whitespace-pre-line space-y-0.5">
-                  {proj.description}
-                </p>
-                <div className="flex gap-4 mt-0.5 text-[9px] font-mono text-slate-500 no-print">
-                  <a href={proj.githubUrl} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 flex items-center gap-1">
-                    <ExternalLink className="h-2.5 w-2.5" /> View Codebase Code
-                  </a>
-                  <a href={proj.linkedinUrl} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 flex items-center gap-1">
-                    <ExternalLink className="h-2.5 w-2.5" /> Read Summary Case Study
-                  </a>
+                <div className="text-[10px] sm:text-[11px] font-mono shrink-0 flex items-center gap-1.5 text-blue-600 font-medium">
+                  <a href="https://github.com/TechByJay/Banking-Fraud-Detection-and-Credit-Risk-Analysis-using-python--EDA--and-Power-BI" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
+                  <span className="text-slate-300">|</span>
+                  <a href="https://www.linkedin.com/posts/jay-rande_banking-fraud-detection-using-python-eda-activity-7466802731022704641-ow39" target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a>
                 </div>
               </div>
-            ))}
+              <ul className="list-disc list-outside ml-4 text-[11px] sm:text-xs text-slate-800 leading-relaxed font-light space-y-1">
+                <li>Analyzed 500K+ banking transactions using Python EDA to identify fraud patterns and high-risk customer segments, improving fraud classification accuracy by an estimated 18%.</li>
+                <li>Built interactive Power BI dashboards with DAX measures tracking fraud KPIs, credit risk exposure, and transaction anomalies, enabling real-time risk mitigation decisions for business partners.</li>
+                <li>Conducted end-to-end data cleaning, preprocessing, and statistical analysis to validate data quality and ensure accurate risk modeling outputs.</li>
+              </ul>
+            </div>
+
+            {/* Project 2 */}
+            <div>
+              <div className="flex justify-between items-baseline flex-wrap gap-1.5 mb-1">
+                <div className="text-[11.5px] sm:text-[12.5px] text-slate-950 font-bold leading-snug">
+                  Apple Retail Sales Analytics — 1M+ Records <span className="font-normal text-slate-800">(PostgreSQL, Advanced SQL, CTEs, Window Functions)</span>
+                </div>
+                <div className="text-[10px] sm:text-[11px] font-mono shrink-0 flex items-center gap-1.5 text-blue-600 font-medium">
+                  <a href="https://github.com/TechByJay/apple-retail-sales-analytics-using-postgresql-with-1m-records" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
+                  <span className="text-slate-300">|</span>
+                  <a href="https://www.linkedin.com/posts/jay-rande_sql-postgresql-dataanalytics-activity-7464348133225820160-Lckb" target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a>
+                </div>
+              </div>
+              <ul className="list-disc list-outside ml-4 text-[11px] sm:text-xs text-slate-800 leading-relaxed font-light space-y-1">
+                <li>Analyzed over 1 million retail sales records using PostgreSQL, applying CTEs, Window Functions, Subqueries, and query optimization to reduce execution time by 40%.</li>
+                <li>Identified top-performing products, revenue-driving trends, and customer purchasing behavior, delivering 5 strategic insights to support inventory planning and sales optimization.</li>
+                <li>Designed SQL-based analytical workflows to disseminate large-scale data insights, directly supporting data-driven decision-making for stakeholders.</li>
+              </ul>
+            </div>
+
+            {/* Project 3 */}
+            <div>
+              <div className="flex justify-between items-baseline flex-wrap gap-1.5 mb-1">
+                <div className="text-[11.5px] sm:text-[12.5px] text-slate-950 font-bold leading-snug">
+                  Credit Card Fraud Detection & Risk Analytics Platform <span className="font-normal text-slate-800">(Power BI, DAX, Risk Analytics, Data Transformation)</span>
+                </div>
+                <div className="text-[10px] sm:text-[11px] font-mono shrink-0 flex items-center gap-1.5 text-blue-600 font-medium">
+                  <a href="https://github.com/TechByJay/Credit_Card_Fraud_Detection_And_Risk_Analytics_Platform" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
+                  <span className="text-slate-300">|</span>
+                  <a href="https://www.linkedin.com/posts/jay-rande_powerbi-dataanalytics-businessintelligence-activity-7462843136369709057-obpW" target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a>
+                </div>
+              </div>
+              <ul className="list-disc list-outside ml-4 text-[11px] sm:text-xs text-slate-800 leading-relaxed font-light space-y-1">
+                <li>Built a BI platform monitoring 200K+ credit card transactions for fraudulent activity, customer risk profiles, and anomalies — enabling rapid identification of fraud-prone segments.</li>
+                <li>Developed KPI-driven dashboards featuring fraud risk segmentation, transaction monitoring, and performance metrics using DAX, improving reporting accuracy for business partners.</li>
+                <li>Performed data transformation and validation routines to ensure data integrity across all analytical reporting pipelines.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Visual Page Break Separator (Hidden on Print & Download) */}
-      <div className="h-px bg-slate-200 my-2 border-dashed border-t border-slate-300 relative no-print shrink-0 select-none mx-5 sm:mx-8" title="Page Break">
+      <div className="h-px bg-slate-200 my-1 border-dashed border-t border-slate-300 relative no-print shrink-0 select-none mx-5 sm:mx-8" title="Page Break">
         <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-50 px-3 text-[10px] font-mono text-slate-400 uppercase tracking-wider leading-none">
           Page 1 / Page 2 Break
         </span>
       </div>
 
       {/* Page 2 */}
-      <div id="resume-page-2" className="p-5 sm:p-8">
-        {/* Professional Internship */}
-        <div id="resume-field-experience" className="pb-2.5 border-b border-slate-200">
-          <h2 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-1.5">
-            Field Experience
+      <div id="resume-page-2" className="p-8 sm:p-10 select-all">
+        {/* Project 4 */}
+        <div className="py-2">
+          <div className="space-y-3.5">
+            <div>
+              <div className="flex justify-between items-baseline flex-wrap gap-1.5 mb-1">
+                <div className="text-[11.5px] sm:text-[12.5px] text-slate-950 font-bold leading-snug">
+                  Vendor Performance & Inventory Analytics System <span className="font-normal text-slate-800">(Power BI, DAX, SQL, ETL)</span>
+                </div>
+                <div className="text-[10px] sm:text-[11px] font-mono shrink-0 flex items-center gap-1.5 text-blue-600 font-medium">
+                  <a href="https://github.com/TechByJay/Vendor_Performance_and_Inventory_Analytics_System" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
+                  <span className="text-slate-300">|</span>
+                  <a href="https://www.linkedin.com/posts/jay-rande_dataanalytics-powerbi-sql-activity-7462343832634851328-d8Gn" target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a>
+                </div>
+              </div>
+              <ul className="list-disc list-outside ml-4 text-[11px] sm:text-xs text-slate-800 leading-relaxed font-light space-y-1">
+                <li>Designed a BI solution evaluating vendor performance and procurement efficiency, identifying operational bottlenecks and improving inventory utilization insights by 15%.</li>
+                <li>Created KPI dashboards tracking inventory turnover, vendor contribution, and supply chain performance, supporting operational planning decisions for business partners.</li>
+                <li>Built ETL routines to organize, transform, and validate procurement datasets, ensuring accuracy and consistency across all analytical reports.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* EXPERIENCE */}
+        <div className="py-2.5">
+          <h2 className="text-xs sm:text-[13px] font-bold text-slate-950 uppercase tracking-wider border-b border-slate-950 pb-0.5 mb-2.5">
+            EXPERIENCE
           </h2>
           <div>
-            {EXPERIENCE_DATA.map((exp) => (
-              <div key={exp.company}>
-                <div className="flex justify-between items-baseline">
-                  <div>
-                    <h3 className="text-xs font-bold text-slate-900">
-                      SEO & Search Analytics Intern
-                    </h3>
-                    <span className="block text-xs font-medium text-slate-500">
-                      {exp.company}
-                    </span>
-                  </div>
-                  <span className="text-xs font-mono text-slate-600 font-medium">
-                    Feb 2026 – Apr 2026
-                  </span>
-                </div>
-                <ul className="list-disc list-inside mt-1.5 space-y-1 text-xs text-slate-600 leading-normal font-light pl-1">
-                  {exp.description.map((bullet, i) => (
-                    <li key={i}>{bullet}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Academic Certifications */}
-        <div className="py-2.5 border-b border-slate-200">
-          <h2 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-1.5">
-            Academic Credentials & Certifications
-          </h2>
-          <div className="space-y-1 text-xs text-slate-750">
-            {CERTIFICATES_DATA.map((c) => (
-              <div key={c.title} className="flex justify-between items-baseline">
-                <span className="font-medium text-slate-800">
-                  <strong>{c.title}</strong> — Verified by {c.issuer}
+            <div className="flex justify-between items-baseline flex-wrap gap-1.5 mb-1">
+              <div>
+                <h3 className="text-xs sm:text-[12.5px] font-bold text-slate-950">
+                  Cinute Digital Pvt Ltd <span className="font-normal text-slate-800">— SEO & Search Analytics Intern</span>
+                </h3>
+                <span className="block text-[11px] sm:text-xs text-slate-500 font-medium font-mono">
+                  Mumbai, India
                 </span>
-                <span className="font-mono text-slate-500 text-[10px] shrink-0 ml-4">{c.date}</span>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Education */}
-        <div className="py-2.5 border-b border-slate-200">
-          <h2 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-1.5">
-            Education
-          </h2>
-          <div className="flex justify-between items-baseline text-xs">
-            <div>
-              <h3 className="text-xs font-bold text-slate-900">
-                Bachelor of Science in Computer Science (B.Sc. CS)
-              </h3>
-              <span className="block text-xs font-semibold text-slate-500">
-                Bhavans College, Mumbai University
+              <span className="text-xs font-mono text-slate-600 font-medium">
+                Feb 2026 – Apr 2026
               </span>
             </div>
-            <span className="font-mono text-slate-600 font-medium">
-              2023 – 2026
-            </span>
-          </div>
-          <div className="mt-1 text-xs text-slate-600 font-light">
-            CGPA Completed: <strong>7.0 / 10.0 scale</strong> (First Class honors coursework in DBMS, statistics, and programming algorithms)
+            <ul className="list-disc list-outside ml-4 text-[11px] sm:text-xs text-slate-800 leading-relaxed font-light space-y-1">
+              <li>Analyzed website performance data to identify trends in search traffic, contributing to a 20% improvement in content engagement metrics across 50+ digital assets.</li>
+              <li>Built reporting dashboards to track SEO KPIs and developed automation solutions for content audit workflows, reducing manual review time by 25%.</li>
+            </ul>
           </div>
         </div>
 
-        {/* Hobbies & Interests Section */}
+        {/* EDUCATION */}
         <div className="py-2.5">
-          <h2 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-1.5">
-            Personal Interests & Hobbies
+          <h2 className="text-xs sm:text-[13px] font-bold text-slate-950 uppercase tracking-wider border-b border-slate-950 pb-0.5 mb-2.5">
+            EDUCATION
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-1.5 gap-x-6 text-xs text-slate-600">
-            <div>
-              <span className="block font-bold text-slate-900 mb-0.5">Swimming:</span>
-              <span className="font-light">Excellent for cardiorespiratory fitness, muscle endurance, and deep stress relief.</span>
+          <div>
+            <div className="flex justify-between items-baseline flex-wrap gap-1.5 mb-1">
+              <div>
+                <h3 className="text-xs sm:text-[12.5px] font-bold text-slate-950">
+                  Bachelor of Science in Computer Science
+                </h3>
+                <span className="block text-[11px] sm:text-xs text-slate-500 font-medium font-mono">
+                  Mumbai University, Bhavans College
+                </span>
+              </div>
+              <span className="text-xs font-mono text-slate-600 font-medium">
+                2023 – 2026
+              </span>
             </div>
-            <div>
-              <span className="block font-bold text-slate-900 mb-0.5">Running:</span>
-              <span className="font-light">Promotes long-term physical stamina, mental clarity, and persistent daily discipline.</span>
-            </div>
-            <div>
-              <span className="block font-bold text-slate-900 mb-0.5">Cricket:</span>
-              <span className="font-light">Develops strategic logic, precision focus, and strong collaborative team coordination.</span>
-            </div>
+            <p className="text-[11px] sm:text-xs text-slate-800 leading-relaxed font-light mt-1.5">
+              GPA: <strong>2.9 / 4.0</strong> (converted from 7.0/10.0 CGPA) <span className="text-slate-300 mx-1.5">|</span> <strong className="font-semibold text-slate-950">Relevant Coursework:</strong> Database Management Systems, Statistics, Data Structures & Algorithms, Programming
+            </p>
           </div>
+        </div>
+
+        {/* CERTIFICATIONS */}
+        <div className="py-2.5">
+          <h2 className="text-xs sm:text-[13px] font-bold text-slate-950 uppercase tracking-wider border-b border-slate-950 pb-0.5 mb-2.5">
+            CERTIFICATIONS
+          </h2>
+          <ul className="list-disc list-outside ml-4 text-[11px] sm:text-xs text-slate-800 leading-relaxed font-light space-y-1.5">
+            <li>
+              <strong className="font-semibold text-slate-950">Responsive Web Design</strong> — FreeCodeCamp (April 2025) <span className="no-print text-[10px] font-mono text-slate-400">(<a href="https://www.freecodecamp.org/certification/fccaaed2169-bb8c-4820-9f50-dc501137a0cc/responsive-web-design" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Verify</a>)</span>
+            </li>
+            <li>
+              <strong className="font-semibold text-slate-950">JavaScript Algorithms and Data Structures</strong> — FreeCodeCamp (May 2025) <span className="no-print text-[10px] font-mono text-slate-400">(<a href="https://www.freecodecamp.org/certification/fccaaed2169-bb8c-4820-9f50-dc501137a0cc/javascript-algorithms-and-data-structures-v8" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Verify</a>)</span>
+            </li>
+            <li>
+              <strong className="font-semibold text-slate-950">Mastering Data Structures & Algorithms Using C and C++</strong> — Udemy (April 2025) <span className="no-print text-[10px] font-mono text-slate-400">(<a href="https://www.linkedin.com/posts/jay-rande_datastructures-algorithms-cpp-activity-7319466745822437376-3BFN" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Verify</a>)</span>
+            </li>
+          </ul>
         </div>
       </div>
 

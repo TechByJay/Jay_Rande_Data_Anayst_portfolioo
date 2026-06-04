@@ -2,6 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Award, ExternalLink, Linkedin, ShieldCheck, X, Eye, Image as ImageIcon, Tag, Upload, Link, AlertCircle, RefreshCw } from 'lucide-react';
 import { CERTIFICATES_DATA } from '../data';
 
+import fccResponsiveImg from '../assets/images/fcc_responsive_web_1780512000000_1780503693686.png';
+import udemyDsaImg from '../assets/images/udemy_dsa_cpp_1780512000000_1780503709084.png';
+import fccJsImg from '../assets/images/fcc_js_algorithms_1780512000000_1780503723073.png';
+import profileImg from '../assets/images/regenerated_image_1780485889646.jpg';
+import bankingFraudImg from '../assets/images/regenerated_image_1780485891593.png';
+import appleRetailImg from '../assets/images/regenerated_image_1780485894971.jpg';
+import creditCardFraudImg from '../assets/images/regenerated_image_1780485896467.png';
+import vendorPerfImg from '../assets/images/regenerated_image_1780485899217.jpg';
+import olaRidesImg from '../assets/images/regenerated_image_1780485900862.jpg';
+
 interface Certificate {
   title: string;
   issuer: string;
@@ -14,39 +24,39 @@ interface Certificate {
 const PRESET_IMAGES = [
   {
     name: 'Responsive Web Design (Credential)',
-    url: '/src/assets/images/fcc_responsive_web_1780512000000_1780503693686.png',
+    url: fccResponsiveImg,
   },
   {
     name: 'Mastering DSA (Udemy Credential)',
-    url: '/src/assets/images/udemy_dsa_cpp_1780512000000_1780503709084.png',
+    url: udemyDsaImg,
   },
   {
     name: 'JS Algorithms (Credential)',
-    url: '/src/assets/images/fcc_js_algorithms_1780512000000_1780503723073.png',
+    url: fccJsImg,
   },
   {
     name: 'Regenerated Portrait Image',
-    url: '/src/assets/images/regenerated_image_1780485889646.jpg',
+    url: profileImg,
   },
   {
     name: 'Banking Fraud Dashboard',
-    url: '/src/assets/images/regenerated_image_1780485891593.png',
+    url: bankingFraudImg,
   },
   {
     name: 'Apple Retail Analytics',
-    url: '/src/assets/images/regenerated_image_1780485894971.jpg',
+    url: appleRetailImg,
   },
   {
     name: 'Credit Card Analytics',
-    url: '/src/assets/images/regenerated_image_1780485896467.png',
+    url: creditCardFraudImg,
   },
   {
     name: 'Vendor Inventory Dashboard',
-    url: '/src/assets/images/regenerated_image_1780485899217.jpg',
+    url: vendorPerfImg,
   },
   {
     name: 'OLA Ride Business Dashboard',
-    url: '/src/assets/images/regenerated_image_1780485900862.jpg',
+    url: olaRidesImg,
   }
 ];
 
