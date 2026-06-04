@@ -90,7 +90,7 @@ export default function Projects() {
                 {/* Tags */}
                 <div className="flex flex-wrap gap-1.5 mb-5">
                   {proj.technologies.map(t => (
-                    <span key={t} className="text-[9px] font-mono font-semibold bg-slate-950/60 border border-slate-800 text-slate-350 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                    <span key={t} className="text-[9px] font-mono font-bold bg-blue-600/10 border border-blue-500/30 text-blue-400 px-2.5 py-1 rounded-md uppercase tracking-wider shadow-[0_0_15px_rgba(59,130,246,0.15)] group-hover:bg-blue-600/20 group-hover:border-blue-500/50 transition-all">
                       {t}
                     </span>
                   ))}

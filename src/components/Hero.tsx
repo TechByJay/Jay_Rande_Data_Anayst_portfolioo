@@ -83,12 +83,12 @@ export default function Hero({ onOpenResume }: HeroProps) {
   };
 
   const handleDownloadClick = () => {
-    const downloadBtn = document.getElementById('primary-download-pdf-btn');
-    if (downloadBtn) {
-      downloadBtn.click();
-    } else {
-      onOpenResume();
-    }
+    const link = document.createElement('a');
+    link.href = '/Jay_Rande.pdf';
+    link.download = 'Jay_Rande.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
