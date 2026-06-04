@@ -8,9 +8,9 @@ import vendorPerfImg from './assets/images/regenerated_image_1780485899217.jpg';
 import appleRetailImg from './assets/images/regenerated_image_1780485894971.jpg';
 import olaRidesImg from './assets/images/regenerated_image_1780485900862.jpg';
 
-import fccResponsiveImg from './assets/images/fcc_responsive_web_1780512000000_1780503693686.png';
-import udemyDsaImg from './assets/images/udemy_dsa_cpp_1780512000000_1780503709084.png';
-import fccJsImg from './assets/images/fcc_js_algorithms_1780512000000_1780503723073.png';
+import fccResponsiveImg from './assets/images/responsive_web_design_1780502975642.png';
+import udemyDsaImg from './assets/images/dsa_cpp_algorithms_1780502994885.png';
+import fccJsImg from './assets/images/javascript_algorithms_1780503012582.png';
 
 export const JAY_PROFILE = {
   name: 'Jay Rande',

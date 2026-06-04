@@ -539,14 +539,16 @@ export default function Resume({ onClose, isModal = false }: ResumeProps) {
           {/* Contact Strip */}
           <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[11.5px] sm:text-xs text-slate-800 font-mono tracking-wide">
             <span>Mumbai, India</span>
-            <span className="text-slate-300">|</span>
+            <span className="text-slate-950 px-1">•</span>
             <a href="tel:+919321778286" className="hover:text-blue-600 transition">+91 9321778286</a>
-            <span className="text-slate-300">|</span>
+            <span className="text-slate-950 px-1">•</span>
             <a href="mailto:jayrandecs@gmail.com" onClick={handleCopyEmail} className="hover:text-blue-600 transition underline cursor-pointer">{copiedEmail ? 'Copied!' : 'jayrandecs@gmail.com'}</a>
-            <span className="text-slate-300">|</span>
-            <a href="https://linkedin.com/in/jay-rande" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition underline">linkedin.com/in/jay-rande</a>
-            <span className="text-slate-300">|</span>
-            <a href="https://github.com/TechByJay" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition underline">github.com/TechByJay</a>
+            <span className="text-slate-950 px-1">•</span>
+            <a href="https://linkedin.com/in/jay-rande" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition underline">LinkedIn</a>
+            <span className="text-slate-950 px-1">•</span>
+            <a href="https://github.com/TechByJay" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition underline">GitHub</a>
+            <span className="text-slate-950 px-1">•</span>
+            <a href={portfolioUrl} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition underline">Portfolio</a>
           </div>
         </div>
 
@@ -567,7 +569,7 @@ export default function Resume({ onClose, isModal = false }: ResumeProps) {
           </h2>
           <div className="space-y-1.5 text-[11px] sm:text-xs text-slate-800 leading-relaxed font-normal">
             <div>
-              <strong className="font-bold text-slate-950">Programming Languages:</strong> Python, SQL, PL/SQL, T-SQL, JavaScript, C, C++
+              <strong className="font-bold text-slate-950">Programming Languages:</strong> Python, SQL, JavaScript, C, C++
             </div>
             <div>
               <strong className="font-bold text-slate-950">Data Analysis & Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn, Exploratory Data Analysis (EDA), Statistical Analysis
@@ -576,7 +578,7 @@ export default function Resume({ onClose, isModal = false }: ResumeProps) {
               <strong className="font-bold text-slate-950">Business Intelligence & Reporting:</strong> Power BI, DAX, Power Query, KPI Dashboards, Data Visualization, Microsoft Excel (PivotTables)
             </div>
             <div>
-              <strong className="font-bold text-slate-950">Databases:</strong> PostgreSQL, MySQL, PL/SQL, T-SQL
+              <strong className="font-bold text-slate-950">Databases:</strong> PostgreSQL, MySQL
             </div>
             <div>
               <strong className="font-bold text-slate-950">Data Engineering & Tools:</strong> ETL Pipelines, Data Cleaning, Data Transformation, Data Validation, Automation Solutions, Web Scraping
