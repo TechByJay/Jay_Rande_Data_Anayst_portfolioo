@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Award, ExternalLink, Linkedin, ShieldCheck, X, Eye, Image as ImageIcon, Tag, Upload, Link, AlertCircle, RefreshCw } from 'lucide-react';
 import { CERTIFICATES_DATA } from '../data';
 
-import fccResponsiveImg from '../assets/images/responsive_web_design_1780502975642.png';
-import udemyDsaImg from '../assets/images/dsa_cpp_algorithms_1780502994885.png';
-import fccJsImg from '../assets/images/javascript_algorithms_1780503012582.png';
+import fccResponsiveImg from '../assets/images/fcc_responsive_web_1780512000000_1780503693686.png';
+import udemyDsaImg from '../assets/images/udemy_dsa_cpp_1780512000000_1780503709084.png';
+import fccJsImg from '../assets/images/fcc_js_algorithms_1780512000000_1780503723073.png';
 import profileImg from '../assets/images/regenerated_image_1780485889646.jpg';
 import bankingFraudImg from '../assets/images/regenerated_image_1780485891593.png';
 import appleRetailImg from '../assets/images/regenerated_image_1780485894971.jpg';
@@ -62,7 +62,7 @@ const PRESET_IMAGES = [
 
 export default function Certificates() {
   const [certs, setCerts] = useState<Certificate[]>(() => {
-    const saved = localStorage.getItem('jay_certs_images_v3');
+    const saved = localStorage.getItem('jay_certs_images_v5');
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
@@ -124,7 +124,7 @@ export default function Certificates() {
     updated.forEach(c => {
       savedMap[c.title] = c.image;
     });
-    localStorage.setItem('jay_certs_images_v3', JSON.stringify(savedMap));
+    localStorage.setItem('jay_certs_images_v5', JSON.stringify(savedMap));
     
     setEditingCert(null);
     setInputVal('');
@@ -171,7 +171,7 @@ export default function Certificates() {
     updated.forEach(c => {
       savedMap[c.title] = c.image;
     });
-    localStorage.setItem('jay_certs_images_v3', JSON.stringify(savedMap));
+    localStorage.setItem('jay_certs_images_v5', JSON.stringify(savedMap));
     
     setEditingCert(null);
     setInputVal('');
@@ -227,6 +227,13 @@ export default function Certificates() {
                   >
                     <Eye className="h-4 w-4 text-blue-400" />
                     Preview Document
+                  </button>
+                  <button
+                    onClick={() => setEditingCert(cert)}
+                    className="flex items-center gap-2 bg-slate-950/90 border border-slate-800 hover:border-blue-500 hover:bg-slate-900 px-4 py-2 rounded-xl text-xs font-semibold scale-95 hover:scale-100 transition-all shadow-xl cursor-pointer"
+                  >
+                    <ImageIcon className="h-4 w-4 text-blue-400" />
+                    Change Image
                   </button>
                 </div>
               </div>
