@@ -151,6 +151,7 @@ export default function Hero({ onOpenResume }: HeroProps) {
                 alt="Jay Rande - Professional Data Analyst"
                 referrerPolicy="no-referrer"
                 loading="eager"
+                style={{ height: '396.4px' }}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
                   // Fallback if image fails
