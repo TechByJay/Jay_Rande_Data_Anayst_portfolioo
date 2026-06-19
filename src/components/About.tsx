@@ -31,7 +31,7 @@ export default function About() {
       title: 'B.Sc. in Computer Science',
       subtitle: 'Bhavans College (Mumbai University)',
       timeframe: 'Graduating Class of 2026',
-      description: 'Strengthened core algorithms, relational database principles, information structures, and statistics. Completed with a CGPA of 7.0.',
+      description: 'Strengthened core algorithms, relational database principles, information structures, and statistics. Completed with a CGPA of 6.3.',
       type: 'education'
     }
   ];

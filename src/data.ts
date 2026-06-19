@@ -210,7 +210,7 @@ export const EDUCATION_DATA: Education[] = [
     college: 'Bhavans College',
     university: 'Mumbai University',
     duration: '2023 – 2026',
-    cgpa: '7.0',
+    cgpa: '6.3',
     achievements: [
       'Solid command over Database Management Systems (DBMS), Structured Query Design, and SQL triggers.',
       'In-depth coursework in Algorithms, Data Structures, Applied Statistics, and Modern Web architectures.',

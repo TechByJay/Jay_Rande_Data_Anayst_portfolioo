@@ -122,7 +122,7 @@ export default function Education() {
                   <path
                     className="stroke-blue-500 transition-all duration-1000 shadow-lg"
                     strokeWidth="2.5"
-                    strokeDasharray="70, 100" /* Representing 7.0/10 CGPA, so 70% fill */
+                    strokeDasharray="63, 100" /* Representing 6.3/10 CGPA, so 63% fill */
                     strokeLinecap="round"
                     fill="none"
                     d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"

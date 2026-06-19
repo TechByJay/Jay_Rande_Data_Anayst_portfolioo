@@ -286,7 +286,7 @@ export default function Resume({ onClose, isModal = false }: ResumeProps) {
             <div className="flex justify-between items-baseline flex-wrap gap-1.5 mb-1">
               <div>
                 <h3 className="text-xs sm:text-[12.5px] font-bold text-slate-950">
-                  Cinute Digital Pvt Ltd <span className="font-normal text-slate-800">— SEO & Search Analytics Intern</span>
+                  Cinute Digital Pvt Ltd <span className="font-normal text-slate-800">— SEO Intern</span>
                 </h3>
                 <span className="block text-[11px] sm:text-xs text-slate-500 font-medium font-mono">
                   Mumbai, India
@@ -323,7 +323,7 @@ export default function Resume({ onClose, isModal = false }: ResumeProps) {
               </span>
             </div>
             <p className="text-[11px] sm:text-xs text-slate-800 leading-relaxed font-light mt-1.5">
-              GPA: <strong>2.9 / 4.0</strong> (converted from 7.0/10.0 CGPA) <span className="text-slate-300 mx-1.5">|</span> <strong className="font-semibold text-slate-950">Relevant Coursework:</strong> Database Management Systems, Statistics, Data Structures & Algorithms, Programming
+              GPA: <strong>2.6 / 4.0</strong> (converted from 6.3/10.0 CGPA) <span className="text-slate-300 mx-1.5">|</span> <strong className="font-semibold text-slate-950">Relevant Coursework:</strong> Database Management Systems, Statistics, Data Structures & Algorithms, Programming
             </p>
           </div>
         </div>
