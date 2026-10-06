@@ -286,19 +286,21 @@ export default function Resume({ onClose, isModal = false }: ResumeProps) {
             <div className="flex justify-between items-baseline flex-wrap gap-1.5 mb-1">
               <div>
                 <h3 className="text-xs sm:text-[12.5px] font-bold text-slate-950">
-                  Cinute Digital Pvt Ltd <span className="font-normal text-slate-800">— SEO Intern</span>
+                  Cinute Digital Pvt Ltd <span className="font-normal text-slate-800">— Data Analyst Intern</span>
                 </h3>
                 <span className="block text-[11px] sm:text-xs text-slate-500 font-medium font-mono">
                   Mumbai, India
                 </span>
               </div>
               <span className="text-xs font-mono text-slate-600 font-medium">
-                Feb 2026 – Apr 2026
+                Feb 2026 – June 2026
               </span>
             </div>
             <ul className="list-disc list-outside ml-4 text-[11px] sm:text-xs text-slate-800 leading-relaxed font-light space-y-1">
-              <li>Analyzed website performance data to identify trends in search traffic, contributing to a 20% improvement in content engagement metrics across 50+ digital assets.</li>
-              <li>Built reporting dashboards to track SEO KPIs and developed automation solutions for content audit workflows, reducing manual review time by 25%.</li>
+              <li><strong className="font-semibold text-slate-950">Dataset Consolidation & Cleaning:</strong> Merged and normalized fragmented multi-sheet transaction datasets, eliminating duplicate records and resolving schema inconsistencies.</li>
+              <li><strong className="font-semibold text-slate-950">Calculated Metrics & Feature Engineering:</strong> Created custom engineered features (time-based buckets, product category segments, and spend thresholds) to facilitate deeper behavioral analytics.</li>
+              <li><strong className="font-semibold text-slate-950">Power BI & Excel Reporting:</strong> Designed interactive executive dashboards mapping product revenue trends, customer purchasing frequency, peak sales hours, and order behavior.</li>
+              <li><strong className="font-semibold text-slate-950">Stakeholder Reporting:</strong> Translated complex technical data models into concise visual summaries, aiding management in inventory planning and marketing drive timing.</li>
             </ul>
           </div>
         </div>
@@ -323,7 +325,7 @@ export default function Resume({ onClose, isModal = false }: ResumeProps) {
               </span>
             </div>
             <p className="text-[11px] sm:text-xs text-slate-800 leading-relaxed font-light mt-1.5">
-              GPA: <strong>2.6 / 4.0</strong> (converted from 6.3/10.0 CGPA) <span className="text-slate-300 mx-1.5">|</span> <strong className="font-semibold text-slate-950">Relevant Coursework:</strong> Database Management Systems, Statistics, Data Structures & Algorithms, Programming
+              CGPA: <strong>6.3 / 10.0</strong> <span className="text-slate-300 mx-1.5">|</span> <strong className="font-semibold text-slate-950">Relevant Coursework:</strong> Database Management Systems, Statistics, Data Structures & Algorithms, Programming
             </p>
           </div>
         </div>

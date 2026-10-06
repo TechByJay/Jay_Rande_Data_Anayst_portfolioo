@@ -1,12 +1,12 @@
-import { Briefcase, Calendar, MapPin, Sparkles, CheckCircle2, TrendingUp, Monitor } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, Sparkles, CheckCircle2, BarChart3, Database } from 'lucide-react';
 import { EXPERIENCE_DATA } from '../data';
 
 export default function Experience() {
   const exp = EXPERIENCE_DATA[0];
 
   const secondarymetrics = [
-    { label: 'Site Speed Index', before: '3.4s', after: '1.2s', desc: 'LCP latency compression', icon: Monitor },
-    { label: 'Organic Link Impression', before: '+0.5%', after: '+14.2%', desc: 'CTR metadata tuning', icon: TrendingUp }
+    { label: 'Report Generation Time', before: '4.5 hrs', after: '25 mins', desc: 'POWER BI AUTOMATION', icon: BarChart3 },
+    { label: 'Data Integrity & Consistency', before: '81.5%', after: '99.4%', desc: 'SCHEMA NORMALIZATION', icon: Database }
   ];
 
   return (
@@ -75,12 +75,29 @@ export default function Experience() {
               </h4>
               
               <ul className="space-y-4">
-                {exp.description.map((bullet, bidx) => (
-                  <li id={`exp-bullet-${bidx}`} key={bidx} className="flex gap-3 text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
-                    <CheckCircle2 className="h-5 w-5 text-emerald-400 shrink-0 mt-0.5" />
-                    <span>{bullet}</span>
-                  </li>
-                ))}
+                {exp.description.map((bullet, bidx) => {
+                  const cleaned = bullet.replace(/^[•\s\-\*]+\s*/, '');
+                  const colonIndex = cleaned.indexOf(': ');
+                  const hasLabel = colonIndex > 0 && colonIndex < 45;
+                  const label = hasLabel ? cleaned.substring(0, colonIndex) : null;
+                  const content = hasLabel ? cleaned.substring(colonIndex + 2) : cleaned;
+
+                  return (
+                    <li id={`exp-bullet-${bidx}`} key={bidx} className="flex gap-3 text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
+                      <CheckCircle2 className="h-5 w-5 text-emerald-400 shrink-0 mt-0.5" />
+                      <span>
+                        {hasLabel && label ? (
+                          <>
+                            <strong className="font-semibold text-white">{label}: </strong>
+                            {content}
+                          </>
+                        ) : (
+                          cleaned
+                        )}
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
 
@@ -108,7 +125,7 @@ export default function Experience() {
               })}
 
               <p className="text-[10px] text-slate-500 font-light italic leading-normal pt-2">
-                Tenure was focused on translating visual crawl statistics into actionable performance adjustments for the technical engineering team.
+                Tenure was focused on data consolidation, cleaning, and translating analytical metrics into actionable reporting dashboards for stakeholders.
               </p>
             </div>
 

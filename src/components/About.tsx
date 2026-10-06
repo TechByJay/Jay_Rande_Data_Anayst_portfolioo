@@ -12,10 +12,10 @@ export default function About() {
   const milestones = [
     {
       year: '2026',
-      title: 'SEO & Performance Intern',
+      title: 'Data Analyst Intern',
       subtitle: 'Cinute Digital Pvt Ltd',
-      timeframe: 'Feb 2026 – Apr 2026',
-      description: 'Researched and created technical content on software testing, API testing, security testing, and page optimization.',
+      timeframe: 'FEB 2026 - June 2026',
+      description: 'Performed data consolidation and cleaning, engineered analytical features, and created Power BI & Excel reports to deliver actionable insights for stakeholders.',
       type: 'internship'
     },
     {

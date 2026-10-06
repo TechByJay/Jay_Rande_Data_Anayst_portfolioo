@@ -194,12 +194,15 @@ export const CERTIFICATES_DATA: Certificate[] = [
 export const EXPERIENCE_DATA: Experience[] = [
   {
     company: 'Cinute Digital Pvt Ltd',
-    role: 'SEO Intern',
-    duration: 'February 2026 – April 2026',
+    role: 'Data Analyst Intern',
+    duration: 'February 2026 – June 2026',
     location: 'Mumbai (Remote / Hybrid)',
     description: [
-      'Researched and created technical content on software testing, API testing, security testing, and performance analysis topics.',
-      'Conducted content audits, quality reviews, and digital content optimization to improve content accuracy, structure, and user engagement.'
+      'Performed data consolidation and cleaning, engineered analytical features, and created Power BI & Excel reports to deliver actionable insights for stakeholders.',
+      'Dataset Consolidation & Cleaning: Merged and normalized fragmented multi-sheet transaction datasets, eliminating duplicate records and resolving schema inconsistencies.',
+      'Calculated Metrics & Feature Engineering: Created custom engineered features (time-based buckets, product category segments, and spend thresholds) to facilitate deeper behavioral analytics.',
+      'Power BI & Excel Reporting: Designed interactive executive dashboards mapping product revenue trends, customer purchasing frequency, peak sales hours, and order behavior.',
+      'Stakeholder Reporting: Translated complex technical data models into concise visual summaries, aiding management in inventory planning and marketing drive timing.'
     ]
   }
 ];
